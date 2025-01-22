@@ -1,23 +1,31 @@
 import {
   algorand,
+  android,
   bitcoin,
   buy,
   cardano,
   chainlink,
+  chrome,
   custody,
   dodge,
+  email,
   eos,
   etherium,
+  firefox,
   futureDashboard,
   futureMultisig,
   futurePortfolio,
   futureSecurity,
   futureTransaction,
   futureWidget,
+  ios,
   key,
   kusama,
+  linkedin,
+  lion,
   litecoin,
   lock1,
+  mac,
   matic,
   near,
   polkadot,
@@ -29,12 +37,14 @@ import {
   support3,
   support4,
   technology,
+  telegram,
   tether,
   tron,
   uniswap,
   usdc,
   wallet1,
   wallet2,
+  whatsApp,
   xrp,
 } from "../assets/image";
 import {
@@ -215,7 +225,13 @@ const FAQ_ITEMS: FAQ_DATA[] = [
   },
 ];
 
+const SOCIAL_ITEMS: any[] = [whatsApp, telegram, linkedin, email];
+
+const SOFTWARE_ITEMS: any[] = [ios, android, mac, chrome, lion, firefox];
+
 export {
+  SOFTWARE_ITEMS,
+  SOCIAL_ITEMS,
   FAQ_ITEMS,
   WALLET_ITEMS,
   FUTURE_ITEMS,

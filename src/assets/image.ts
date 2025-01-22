@@ -52,8 +52,24 @@ import lock1 from "./images/icons/lock.svg";
 import key from "./images/icons/key.svg";
 import minus from "./images/icons/minus.svg";
 import plus from "./images/icons/plus.svg";
+import email from "./images/social/email.png";
+import linkedin from "./images/social/linkedin.png";
+import telegram from "./images/social/telegram.png";
+import android from "./images/software/android.png";
+import chrome from "./images/software/chrome.png";
+import mac from "./images/software/mac.png";
+import lion from "./images/software/lion.png";
+import firefox from "./images/software/firefox.png";
 
 export {
+  android,
+  chrome,
+  mac,
+  lion,
+  firefox,
+  email,
+  linkedin,
+  telegram,
   minus,
   plus,
   lock1,

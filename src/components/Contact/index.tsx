@@ -1,4 +1,6 @@
+import { SOCIAL_ITEMS } from "../../constants/Items";
 import ContactCard from "../Cards/Contact";
+import { HeaderText, NormalText } from "../common/Text";
 
 const Contact = () => {
   return (
@@ -6,18 +8,15 @@ const Contact = () => {
       <div className="max-w-7xl mx-auto gap-8 bg-custom-talk bg-center bg-cover bg-no-repeat">
         <div className="relative p-4">
           <div className="py-8 relative z-10">
-            <h2 className="text-5xl font-extrabold white-text-shadow">
-              Let's Talk
-            </h2>
-            <p className="text-stone-300 text-xl mt-4 mb-8">
+            <HeaderText className="white-text-shadow">Let's Talk</HeaderText>
+            <NormalText className="mt-4 mb-8">
               Begin your journey into the tomorrow of fintech today.
-            </p>
+            </NormalText>
           </div>
           <div className="max-w-3xl mx-auto grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8 relative">
-            <ContactCard />
-            <ContactCard />
-            <ContactCard />
-            <ContactCard />
+            {SOCIAL_ITEMS.map((item: any, index: number) => (
+              <ContactCard key={index} item={item} />
+            ))}
           </div>
         </div>
       </div>
