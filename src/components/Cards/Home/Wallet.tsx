@@ -12,11 +12,13 @@ const WalletCard: React.FC<{ item: WALLET_DATA }> = ({ item }) => {
           </button>
         </div>
       </div>
-      <img
-        src={item.img}
-        className="w-full md:w-1/2 rounded-lg mb-4 md:mb-0"
-        alt="wallet1"
-      />
+      <div className="w-1/2 rounded-lg mb-4 md:mb-0 justify-items-center">
+        <img
+          src={item.img}
+          className="w-full md:w-2/3 max-h-[320px] rounded-lg mb-4 md:mb-0"
+          alt="wallet1"
+        />
+      </div>
     </div>
   );
 };

@@ -4,7 +4,20 @@ import { HeaderText, NormalText } from "../common/Text";
 
 const Contact = () => {
   return (
-    <section className="w-full py-8 px-4 text-center">
+    <section
+      className="w-full py-8 px-4 text-center"
+      style={{
+        background:
+          "radial-gradient(27.274516120515756% 35.90163801120711% at 50% -2.7755575615628914e-14%,#131315 0%,rgba(0,0,0,1) 100%)",
+      }}
+    >
+      <div
+        className="w-full h-[1px] absolute top-0 left-0 right-0 overflow-visable z-1"
+        style={{
+          background:
+            "radial-gradient(40% 50% at 50% 50%,#28282c 0%,rgb(0,0,0) 100%)",
+        }}
+      />
       <div className="max-w-7xl mx-auto gap-8 bg-custom-talk bg-center bg-cover bg-no-repeat">
         <div className="relative p-4">
           <div className="py-8 relative z-10">

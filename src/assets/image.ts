@@ -23,7 +23,7 @@ import wallet2 from "./images/other/wallet2.svg";
 import homeDownload from "./images/phones/home-download.png";
 import googleplay from "./images/icons/googleplay.svg";
 import apple from "./images/icons/apple.svg";
-import whatsApp from "./images/social/whatsApp.png";
+import whatsApp from "./images/social/whatsApp.svg";
 import ios from "./images/software/ios.png";
 import custody from "./images/icons/custody.svg";
 import buy from "./images/icons/buy.svg";
@@ -52,16 +52,40 @@ import lock1 from "./images/icons/lock.svg";
 import key from "./images/icons/key.svg";
 import minus from "./images/icons/minus.svg";
 import plus from "./images/icons/plus.svg";
-import email from "./images/social/email.png";
-import linkedin from "./images/social/linkedin.png";
-import telegram from "./images/social/telegram.png";
+import email from "./images/social/email.svg";
+import linkedin from "./images/social/linkedin.svg";
+import telegram from "./images/social/telegram.svg";
 import android from "./images/software/android.png";
 import chrome from "./images/software/chrome.png";
 import mac from "./images/software/mac.png";
 import lion from "./images/software/lion.png";
 import firefox from "./images/software/firefox.png";
+import feature from "./images/icons/feature.svg";
+import currency from "./images/icons/currency.svg";
+import face from "./images/icons/face.svg";
+import question from "./images/icons/question.svg";
+import phone1 from "./images/phones/1.avif";
+import phone2 from "./images/phones/2.avif";
+import appStore from "./images/icons/appStore.svg";
+import googleAppStore from "./images/icons/googleAppStore.svg";
+import xcom from "./images/social/xcom.svg";
+import youtube from "./images/social/youtube.svg";
+import instagram from "./images/social/instagram.svg";
+import quora from "./images/social/quora.svg";
 
 export {
+  quora,
+  instagram,
+  youtube,
+  xcom,
+  appStore,
+  googleAppStore,
+  phone1,
+  phone2,
+  question,
+  face,
+  currency,
+  feature,
   android,
   chrome,
   mac,

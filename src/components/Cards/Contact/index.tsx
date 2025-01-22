@@ -1,11 +1,9 @@
 const ContactCard: React.FC<{ item: any }> = ({ item }) => {
   return (
-    <div className="flex justify-center items-center transform hover:scale-105 transition-transform duration-300">
-      <img
-        src={item}
-        alt="WhatsApp"
-        className="w-32 h-32 md:w-36 md:h-36 lg:w-40 lg:h-40"
-      />
+    <div className="w-full justify-items-center">
+      <div className="w-max p-[10px] bg-[#181820] rounded-[12px]">
+        <img className="w-[38px] h-[38px]" src={item} alt="ios" />
+      </div>
     </div>
   );
 };

@@ -1,4 +1,5 @@
-import { apple, googleplay, homeDownload } from "../../assets/image";
+import { appStore, googleAppStore, homeDownload } from "../../assets/image";
+import { NormalButton } from "../../components/common/Button";
 
 const HomeDownload = () => {
   return (
@@ -21,21 +22,39 @@ const HomeDownload = () => {
               and take control of your digital assets with confidence. Available
               for both iOS and Android devices.
             </p>
-            <div className="flex flex-wrap gap-4">
-              <a href="./#" className="inline-block">
-                <img
-                  src={googleplay}
-                  alt="Get it on Google Play"
-                  className="h-14 w-auto hover:opacity-80 transition-opacity"
-                />
-              </a>
-              <a href="./#" className="inline-block">
-                <img
-                  src={apple}
-                  alt="Download on the App Store"
-                  className="h-14 w-auto hover:opacity-80 transition-opacity"
-                />
-              </a>
+            <div className="flex flex-col md:flex-row gap-[20px]">
+              <NormalButton className="px-[18px] py-[14px]">
+                <div className="flex gap-[10px] items-center justify-center">
+                  <img
+                    className="w-[40px] h-[40px]"
+                    src={googleAppStore}
+                    alt="google app store"
+                  />
+                  <div className="flex flex-col gap-[10px]">
+                    <p className="text-[13px] leading-[10.4px]">Get It On</p>
+                    <p className="text-[17px] font-semibold leading-[13.6px]">
+                      Google Play
+                    </p>
+                  </div>
+                </div>
+              </NormalButton>
+              <NormalButton className="px-[18px] py-[14px]">
+                <div className="flex gap-[10px] items-center justify-center">
+                  <img
+                    className="w-[40px] h-[40px]"
+                    src={appStore}
+                    alt="app store"
+                  />
+                  <div className="flex flex-col gap-[10px]">
+                    <p className="text-[13px] leading-[10.4px]">
+                      Download on the
+                    </p>
+                    <p className="text-[17px] font-semibold leading-[13.6px]">
+                      App Store
+                    </p>
+                  </div>
+                </div>
+              </NormalButton>
             </div>
             <div className="mt-8">
               <div className="flex items-center gap-2 mb-3">
