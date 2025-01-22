@@ -1,3 +1,5 @@
+import Contact from "../Contact";
+import Footer from "../Footer";
 import Nav from "../Nav";
 
 type LayoutProps = {
@@ -9,6 +11,8 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
     <div className="w-full h-full justify-items-center">
       <Nav />
       {children}
+      <Contact />
+      <Footer />
     </div>
   );
 };
