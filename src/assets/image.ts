@@ -1,7 +1,6 @@
 import favIcon from "./images/icons/favIcon.svg";
 import dropdownMenuIcon from "./images/icons/dropdownMenuIcon.svg";
 import homeHeader from "./images/phones/home-header.svg";
-import technology from "./images/icons/technology.svg";
 import lock from "./images/other/lock.svg";
 import secure from "./images/icons/secure.svg";
 import privateIcon from "./images/icons/private.svg";
@@ -9,22 +8,8 @@ import support1 from "./images/other/support1.svg";
 import support2 from "./images/other/support2.svg";
 import support3 from "./images/other/support3.svg";
 import support4 from "./images/other/support4.svg";
-import security from "./images/icons/security.svg";
-import futureDashboard from "./images/icons/futureDashboard.svg";
-import futureMultisig from "./images/icons/futureMultisig.svg";
-import futurePortfolio from "./images/icons/futurePortfolio.svg";
-import futureSecurity from "./images/icons/futureSecurity.svg";
-import futureTransaction from "./images/icons/futureTransaction.svg";
-import futureWidget from "./images/icons/futureWidget.svg";
-import wallet1 from "./images/other/wallet1.svg";
-import wallet2 from "./images/other/wallet2.svg";
 import homeDownload from "./images/phones/home-download.png";
-import googleplay from "./images/icons/googleplay.svg";
-import apple from "./images/icons/apple.svg";
 import whatsApp from "./images/social/whatsApp.svg";
-import ios from "./images/software/ios.png";
-import custody from "./images/icons/custody.svg";
-import buy from "./images/icons/buy.svg";
 import algorand from "./images/coins/algorand.png";
 import avalanche from "./images/coins/avalanche.png";
 import bitcoin from "./images/coins/bitcoin.png";
@@ -46,18 +31,11 @@ import tron from "./images/coins/tron.png";
 import uniswap from "./images/coins/uniswap.png";
 import usdc from "./images/coins/usdc.png";
 import xrp from "./images/coins/xrp.png";
-import lock1 from "./images/icons/lock.svg";
-import key from "./images/icons/key.svg";
 import minus from "./images/icons/minus.svg";
 import plus from "./images/icons/plus.svg";
 import email from "./images/social/email.svg";
 import linkedin from "./images/social/linkedin.svg";
 import telegram from "./images/social/telegram.svg";
-import android from "./images/software/android.png";
-import chrome from "./images/software/chrome.png";
-import mac from "./images/software/mac.png";
-import lion from "./images/software/lion.png";
-import firefox from "./images/software/firefox.png";
 import feature from "./images/icons/feature.svg";
 import currency from "./images/icons/currency.svg";
 import face from "./images/icons/face.svg";
@@ -94,18 +72,11 @@ export {
   face,
   currency,
   feature,
-  android,
-  chrome,
-  mac,
-  lion,
-  firefox,
   email,
   linkedin,
   telegram,
   minus,
   plus,
-  lock1,
-  key,
   algorand,
   avalanche,
   bitcoin,
@@ -127,22 +98,8 @@ export {
   uniswap,
   usdc,
   xrp,
-  buy,
-  custody,
-  ios,
   whatsApp,
-  googleplay,
-  apple,
   homeDownload,
-  wallet1,
-  wallet2,
-  futureDashboard,
-  futureMultisig,
-  futurePortfolio,
-  futureSecurity,
-  futureTransaction,
-  futureWidget,
-  security,
   support1,
   support2,
   support3,
@@ -152,6 +109,5 @@ export {
   favIcon,
   dropdownMenuIcon,
   homeHeader,
-  technology,
   lock,
 };

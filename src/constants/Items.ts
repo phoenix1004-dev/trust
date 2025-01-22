@@ -1,6 +1,8 @@
 import {
   algorand,
+  avalanche,
   bitcoin,
+  bnb,
   cardano,
   chainlink,
   connection,
@@ -69,7 +71,9 @@ const FEATURE_ITEMS: FEATURE_DATA[] = [
 
 const COIN_ITEMS: COIN_DATA[] = [
   { icon: algorand, title: "Algorand" },
+  { icon: avalanche, title: "Avalanche" },
   { icon: bitcoin, title: "Bitcoin" },
+  { icon: bnb, title: "BNB" },
   { icon: cardano, title: "Cardano" },
   { icon: chainlink, title: "ChainLink" },
   { icon: dodge, title: "Dodge" },
