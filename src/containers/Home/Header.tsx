@@ -1,22 +1,27 @@
 import { homeHeader } from "../../assets/image";
+import { PhoneBgGradient } from "../../components/common/Background";
+import { TitleText } from "../../components/common/Text";
 
 const HomeHeader = () => {
   return (
-    <section className="w-full mx-auto sm:w-2/4 mt-[107px] font-bold text-white py-14 text-center flex flex-col items-center justify-center">
-      <div className="relative mb-7">
-        <h1 className="text-5xl sm:text-5xl lg:text-8xl font-bold">
+    <section className="w-full lg:w-2/3 mt-[107px] font-bold text-white py-14 text-center flex flex-col items-center justify-center">
+      <div className="relative mb-7 mx-[40px] lg:mx-0">
+        <TitleText>
           <span className="white-text-shadow">next</span>
-          <span className="text-lime-400">level</span>
-        </h1>
-        <p className="text-neutral-200 text-sm sm:text-lg md:text-xl font-light">
-          advanced self custody technology
-        </p>
+          <span className="text-lime-400">level </span>
+          <span className="text-neutral-200">
+            advanced self custody technology
+          </span>
+        </TitleText>
       </div>
-      <img
-        src={homeHeader}
-        alt="Next Level Technology"
-        className="main-mobiles responsive-image"
-      ></img>
+      <div className="flex justify-center relative">
+        <img
+          src={homeHeader}
+          alt="Next Level Technology"
+          className="main-mobiles responsive-image"
+        />
+        <PhoneBgGradient />
+      </div>
     </section>
   );
 };

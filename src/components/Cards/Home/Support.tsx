@@ -1,13 +1,16 @@
-import { support1 } from "../../../assets/image";
+import { SUPPORT_DATA } from "../../../types";
+import { BgGradient } from "../../common/Background";
+import { CardDescText, CardTitleText } from "../../common/Text";
 
-const SupportCard = () => {
+const SupportCard: React.FC<{ item: SUPPORT_DATA }> = ({ item }) => {
   return (
-    <div className="bg-[#1a1f2e] rounded-xl p-6 text-left">
-      <h3 className="text-xl font-semibold text-white mb-4">
-        Supported cryptocurrencies
-      </h3>
-      <p className="text-gray-400 mb-4">TOP - 30 Coin Market Cap</p>
-      <img src={support1} alt="Bitcoin" className="w-56 h-56" />
+    <div className="bg-[#09090a] border border-solid border-[#1b1b20] rounded-xl p-6 text-left">
+      <CardTitleText className="mb-4">{item.title}</CardTitleText>
+      <CardDescText className="mb-4">{item.sub}</CardDescText>
+      <div className="relative">
+        <img src={item.img} alt="Bitcoin" className="w-56 h-56" />
+        <BgGradient />
+      </div>
     </div>
   );
 };

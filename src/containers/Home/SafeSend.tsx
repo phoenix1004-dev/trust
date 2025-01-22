@@ -1,4 +1,5 @@
 import { privateIcon, secure, lock } from "../../assets/image";
+import { HeaderText, NormalText } from "../../components/common/Text";
 
 const HomeSafeSend = () => {
   return (
@@ -6,16 +7,16 @@ const HomeSafeSend = () => {
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
           <div className="lg:w-1/2 text-left">
-            <h2 className="text-4xl font-bold text-white mb-6 white-text-shadow">
+            <HeaderText className="mb-6 white-text-shadow">
               What is SafeSend?
-            </h2>
-            <p className="text-gray-300 mb-8">
+            </HeaderText>
+            <NormalText className="mb-8">
               SafeSend is a revolutionary multisig wallet that provides enhanced
               security for your digital assets through multi-signature
               technology. With SafeSend, multiple parties must approve each
               transaction, significantly reducing the risk of unauthorized
               access or theft.
-            </p>
+            </NormalText>
             <div className="flex flex-wrap gap-6">
               <div className="flex items-center gap-3">
                 <div className="w-12 h-12 rounded-full bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center">

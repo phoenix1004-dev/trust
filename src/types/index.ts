@@ -3,4 +3,55 @@ type MENU_LINK = {
   link: string;
 };
 
-export type { MENU_LINK };
+type FEATURE_DATA = {
+  icon: any;
+  title: string;
+  sub: string;
+  desc: string;
+};
+
+type COIN_DATA = {
+  icon: any;
+  title: string;
+};
+
+type SUPPORT_DATA = {
+  img: any;
+  title: string;
+  sub: string;
+};
+
+type BENIFIT_DATA = {
+  img: any;
+  title: string;
+  sub: string;
+  desc: string;
+};
+
+type FUTURE_DATA = {
+  img: any;
+  title: string;
+  sub: string;
+};
+
+type WALLET_DATA = {
+  img: any;
+  title: string;
+  sub: string;
+};
+
+type FAQ_DATA = {
+  qu: string;
+  an: string;
+};
+
+export type {
+  FAQ_DATA,
+  WALLET_DATA,
+  FUTURE_DATA,
+  BENIFIT_DATA,
+  SUPPORT_DATA,
+  MENU_LINK,
+  FEATURE_DATA,
+  COIN_DATA,
+};

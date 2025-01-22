@@ -16,6 +16,59 @@ code {
     monospace;
 }
 
+.text-10xl {
+  font-size: 10rem;
+}
+
+.white-linear-border {
+  border-width: 4px;
+  border-style: solid;
+  border-image-source: linear-gradient(to bottom, transparent 0%, #ffffff 22%);
+  border-image-slice: 1;
+  border-radius: 5% 5% 0 0;
+  border-bottom: none;
+}
+
+.platform-linear-border {
+  border-width: 4px;
+  border-style: solid;
+  border-image-source: linear-gradient(to top, transparent 0%, #ffffff 22%);
+  border-image-slice: 1;
+  border-radius: 0 0 0 5%;
+}
+
+.rounded-in-down {
+  width: 93px; /* Width of the div */
+  height: 84px; /* Height of the div */
+  border-width: 2px; /* Set a reasonable border width */
+  border-style: solid; /* Ensure the border is solid */
+  border-image-source: linear-gradient(
+    to bottom,
+    transparent 0%,
+    #ffffff 22%
+  ); /* Gradient for the border */
+  border-image-slice: 1; /* Fill the entire border with the image */
+  border-radius: 5% 5% 0 0; /* Rounded corners at the top */
+  border-bottom: none; /* Remove the bottom border */
+  background: transparent; /* Set background to transparent */
+}
+
+.rounded-in-up {
+  width: 93px;
+  height: 84px; /* Height of the div */
+  border-width: 2px; /* Set a reasonable border width */
+  border-style: solid; /* Ensure the border is solid */
+  border-image-source: linear-gradient(
+    to top,
+    transparent 0%,
+    #ffffff 22%
+  ); /* Gradient for the border */
+  border-image-slice: 1; /* Fill the entire border with the image */
+  border-radius: 5% 5% 0 0; /* Rounded corners at the top */
+  border-top: none; /* Remove the bottom border */
+  background: transparent; /* Set background to transparent */
+}
+
 .white-text-shadow {
   background: linear-gradient(to top, #535353 0%, #ffffff 50%);
   -webkit-text-fill-color: transparent;
@@ -23,4 +76,99 @@ code {
   background-clip: text;
   color: transparent;
   display: inline;
+}
+
+@media (max-width: 768px) {
+  #why-choose-heading {
+    font-size: 30px;
+  }
+}
+
+/* Default background position */
+.bg-main-custom {
+  background-position: 40% 37%;
+}
+
+/* Background and image adjustments for smaller screens */
+@media (max-width: 640px) {
+  .bg-main-custom {
+    background-position: 1% 12%;
+  }
+
+  .responsive-image {
+    width: 80%; /* Sets width to 80% on smaller screens */
+  }
+}
+
+@media (min-width: 640px) and (max-width: 768px) {
+  .bg-main-custom {
+    background-position: 1% 12%;
+  }
+
+  .responsive-image {
+    width: 80%; /* Sets width to 80% on smaller screens */
+  }
+}
+
+/* Extra Small Devices */
+@media (max-width: 640px) {
+  .w-80 {
+    width: 80%;
+  }
+  .centered-text {
+    text-align: center;
+  }
+  .small-wrap {
+    flex-wrap: wrap;
+  }
+}
+
+/* Medium Devices (768px to 991px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .w-80 {
+    width: 80%;
+  }
+  .centered-text {
+    text-align: center;
+  }
+}
+
+@media (min-width: 1400px) {
+  .download-img-container {
+    margin-top: -3%;
+  }
+}
+
+/* FAQ Animations */
+@keyframes blob {
+  0% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  33% {
+    transform: translate(30px, -50px) scale(1.1);
+  }
+  66% {
+    transform: translate(-20px, 20px) scale(0.9);
+  }
+  100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+}
+
+.animate-blob {
+  animation: blob 7s infinite;
+}
+
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+
+.animation-delay-4000 {
+  animation-delay: 4s;
+}
+
+/* Glassmorphism */
+.backdrop-blur-lg {
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
 }

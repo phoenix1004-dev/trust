@@ -26,7 +26,7 @@ const MobileNav = () => {
   return (
     <div className="w-full px-[30px] py-[24px] lg:hidden border-b border-solid border-[#1d1d20] flex justify-between">
       <FavIcon />
-      <div onClick={toggleMenu} ref={ref}>
+      <div className="flex items-center" onClick={toggleMenu} ref={ref}>
         <DropdownMenuButton />
         <div
           className={`absolute right-[30px] top-[95px] p-[20px] border border-solid border-[#1d1d20] rounded-2xl bg-black flex flex-col gap-4 ${

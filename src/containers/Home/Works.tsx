@@ -1,13 +1,18 @@
 import { one, two } from "../../assets/image";
+import {
+  CardSubText,
+  CardTitleText,
+  HeaderText,
+} from "../../components/common/Text";
 
 const HomeWorks = () => {
   return (
     <section className="w-full mt-16 mb-12 bg-full-screen-shadow bg-no-repeat">
       <div className="max-w-6xl mx-auto text-white">
         <div className="text-center mb-10">
-          <h2 className="text-center text-4xl font-extrabold mb-8 white-text-shadow">
+          <HeaderText className="text-center mb-8 white-text-shadow">
             How it Works
-          </h2>
+          </HeaderText>
         </div>
         <div className="flex flex-col lg:flex-row justify-center lg:space-x-8 space-y-6 lg:space-y-0">
           <div className="first-vector-card flex flex-col items-center w-full lg:w-[45%] px-4 mx-auto">
@@ -18,16 +23,14 @@ const HomeWorks = () => {
                 alt="Secure Setup"
                 style={{ width: "15%" }}
               />
-              <div className="bg-gray-800 rounded-3xl py-8 px-4 w-full min-h-[200px] relative z-10">
-                <h3 className="text-2xl font-semibold mb-2 sm:text-xl">
-                  Secure Setup
-                </h3>
-                <p className="text-gray-400">
+              <div className="bg-[#09090a] border border-solid border-[#18181b] rounded-3xl py-8 px-4 w-full min-h-[200px] relative z-10">
+                <CardTitleText className="mb-2">Secure Setup</CardTitleText>
+                <CardSubText>
                   Create your multisig wallet by selecting the number of
                   signatures required to approve a transaction. Invite trusted
                   parties to join the wallet, each with their own private key
                   securely stored on their device.
-                </p>
+                </CardSubText>
               </div>
             </div>
           </div>
@@ -39,7 +42,7 @@ const HomeWorks = () => {
                 alt="Approve Transactions"
                 style={{ width: "15%" }}
               />
-              <div className="bg-gray-800 rounded-3xl py-8 px-4 w-full min-h-[200px] relative z-10">
+              <div className="bg-[#09090a] border border-solid border-[#18181b] rounded-3xl py-8 px-4 w-full min-h-[200px] relative z-10">
                 <h3 className="text-2xl font-semibold mb-2 sm:text-xl">
                   Approve Transactions
                 </h3>

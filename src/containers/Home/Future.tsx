@@ -1,4 +1,6 @@
 import FutureCard from "../../components/Cards/Home/Future";
+import { FUTURE_ITEMS } from "../../constants/Items";
+import { FUTURE_DATA } from "../../types";
 
 const HomeFuture = () => {
   return (
@@ -15,12 +17,9 @@ const HomeFuture = () => {
         are the six main features that set our wallet apart in the industry.{" "}
       </p>
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-white">
-        <FutureCard />
-        <FutureCard />
-        <FutureCard />
-        <FutureCard />
-        <FutureCard />
-        <FutureCard />
+        {FUTURE_ITEMS.map((item: FUTURE_DATA, index: number) => (
+          <FutureCard key={index} item={item} />
+        ))}
       </div>
     </section>
   );
