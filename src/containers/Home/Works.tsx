@@ -1,4 +1,3 @@
-import { one, two } from "../../assets/image";
 import {
   CardSubText,
   CardTitleText,
@@ -16,13 +15,7 @@ const HomeWorks = () => {
         </div>
         <div className="flex flex-col lg:flex-row justify-center lg:space-x-8 space-y-6 lg:space-y-0">
           <div className="first-vector-card flex flex-col items-center w-full lg:w-[45%] px-4 mx-auto">
-            <div className="relative mb-6 w-full flex justify-start">
-              <img
-                src={one}
-                className="one-vector absolute -left-12 top-1/2 transform -translate-y-1/2 z-0 hidden lg:block"
-                alt="Secure Setup"
-                style={{ width: "15%" }}
-              />
+            <div className="relative mb-6 w-full flex justify-start h-full">
               <div className="bg-[#09090a] border border-solid border-[#18181b] rounded-3xl py-8 px-4 w-full min-h-[200px] relative z-10">
                 <CardTitleText className="mb-2">Secure Setup</CardTitleText>
                 <CardSubText>
@@ -35,13 +28,7 @@ const HomeWorks = () => {
             </div>
           </div>
           <div className="second-vector-card flex flex-col items-center w-full lg:w-[45%] px-4 mx-auto">
-            <div className="relative mb-6 w-full flex justify-start">
-              <img
-                src={two}
-                className="two-vector absolute -left-12 top-1/2 transform -translate-y-1/2 z-0 hidden lg:block"
-                alt="Approve Transactions"
-                style={{ width: "15%" }}
-              />
+            <div className="relative mb-6 w-full flex justify-start h-full">
               <div className="bg-[#09090a] border border-solid border-[#18181b] rounded-3xl py-8 px-4 w-full min-h-[200px] relative z-10">
                 <h3 className="text-2xl font-semibold mb-2 sm:text-xl">
                   Approve Transactions

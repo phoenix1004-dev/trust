@@ -5,8 +5,6 @@ import technology from "./images/icons/technology.svg";
 import lock from "./images/other/lock.svg";
 import secure from "./images/icons/secure.svg";
 import privateIcon from "./images/icons/private.svg";
-import one from "./images/number/1.svg";
-import two from "./images/number/2.svg";
 import support1 from "./images/other/support1.svg";
 import support2 from "./images/other/support2.svg";
 import support3 from "./images/other/support3.svg";
@@ -72,8 +70,18 @@ import xcom from "./images/social/xcom.svg";
 import youtube from "./images/social/youtube.svg";
 import instagram from "./images/social/instagram.svg";
 import quora from "./images/social/quora.svg";
+import connection from "./images/icons/connection.svg";
+import global from "./images/icons/global.svg";
+import group from "./images/icons/group.svg";
+import price from "./images/icons/price.svg";
+import share from "./images/icons/share.svg";
 
 export {
+  share,
+  price,
+  group,
+  global,
+  connection,
   quora,
   instagram,
   youtube,
@@ -139,8 +147,6 @@ export {
   support2,
   support3,
   support4,
-  one,
-  two,
   privateIcon,
   secure,
   favIcon,

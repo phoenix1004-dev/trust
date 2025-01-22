@@ -35,7 +35,7 @@ const HomeSupport = () => {
         NFTs across various protocols. Easily manage your digital assets and
         collectibles, all in one secure and versatile app.
       </NormalText>
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
         {SUPPORT_ITEMS.map((item: SUPPORT_DATA, index: number) => (
           <SupportCard key={index} item={item} />
         ))}

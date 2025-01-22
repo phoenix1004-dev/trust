@@ -1,44 +1,33 @@
 import {
   algorand,
-  android,
   bitcoin,
-  buy,
   cardano,
   chainlink,
-  chrome,
-  custody,
+  connection,
   dodge,
   email,
   eos,
   etherium,
-  firefox,
-  futureDashboard,
-  futureMultisig,
-  futurePortfolio,
-  futureSecurity,
-  futureTransaction,
-  futureWidget,
-  ios,
-  key,
+  face,
+  feature,
+  global,
+  group,
   kusama,
   linkedin,
-  lion,
   litecoin,
-  lock1,
-  mac,
   matic,
   near,
   phone1,
   phone2,
   polkadot,
-  security,
+  price,
+  share,
   shib,
   solana,
   support1,
   support2,
   support3,
   support4,
-  technology,
   telegram,
   tether,
   tron,
@@ -59,19 +48,19 @@ import {
 
 const FEATURE_ITEMS: FEATURE_DATA[] = [
   {
-    icon: technology,
+    icon: connection,
     title: "Multi-Signature Technology",
     sub: "An additional layer of security",
     desc: "Require multiple signatures for transactions, ensuring enhanced protection.",
   },
   {
-    icon: custody,
+    icon: feature,
     title: "Self-Custody",
     sub: "Your keys, your crypto",
     desc: "Store your crypto securely, with full control over your private keys.",
   },
   {
-    icon: buy,
+    icon: global,
     title: "Buy, Swap, Send and Store",
     sub: "Easily manage your crypto portfolio",
     desc: "Purchase, exchange, and transfer your cryptocurrencies, all within the app.",
@@ -125,19 +114,19 @@ const SUPPORT_ITEMS: SUPPORT_DATA[] = [
 
 const BENIFIT_ITEMS: BENIFIT_DATA[] = [
   {
-    img: security,
+    img: price,
     title: "Enhanced Security",
     sub: "Protect your assets with multisig protection",
     desc: "Mitigate the risk of unauthorized transactions and ensure secure storage.",
   },
   {
-    img: lock1,
+    img: group,
     title: "Collaborative Management",
     sub: "Manage crypto with others, securely",
     desc: "Multisig enables shared management of crypto assets, with built-in security.",
   },
   {
-    img: key,
+    img: feature,
     title: "Flexibility",
     sub: "Customize your multisig settings",
     desc: "Choose the number of signatures required and assign roles for tailored security",
@@ -146,32 +135,32 @@ const BENIFIT_ITEMS: BENIFIT_DATA[] = [
 
 const FUTURE_ITEMS: FUTURE_DATA[] = [
   {
-    img: futureDashboard,
+    img: group,
     title: "Personalised dashboard",
     sub: "Our multisig crypto wallet requires multiple private keys for each transaction. In a 2-of-3 setup, two out of three keys must approve before the transaction is executed, ensuring strong protection for your assets.",
   },
   {
-    img: futureMultisig,
+    img: feature,
     title: "Enhanced with Multisig",
     sub: "Our multisig crypto wallet requires multiple private keys for each transaction. In a 2-of-3 setup, two out of three keys must approve before the transaction is executed, ensuring strong protection for your assets.",
   },
   {
-    img: futureTransaction,
+    img: global,
     title: "Seamless Transactions",
     sub: "Our multisig crypto wallet requires multiple private keys for each transaction. In a 2-of-3 setup, two out of three keys must approve before the transaction is executed, ensuring strong protection for your assets.",
   },
   {
-    img: futureSecurity,
+    img: price,
     title: "Advanced Security",
     sub: "Our multisig crypto wallet requires multiple private keys for each transaction. In a 2-of-3 setup, two out of three keys must approve before the transaction is executed, ensuring strong protection for your assets.",
   },
   {
-    img: futureWidget,
+    img: face,
     title: "Custom Widgets",
     sub: "Our multisig crypto wallet requires multiple private keys for each transaction. In a 2-of-3 setup, two out of three keys must approve before the transaction is executed, ensuring strong protection for your assets.",
   },
   {
-    img: futurePortfolio,
+    img: share,
     title: "Comprehensive Portfolio",
     sub: "Our multisig crypto wallet requires multiple private keys for each transaction. In a 2-of-3 setup, two out of three keys must approve before the transaction is executed, ensuring strong protection for your assets.",
   },
@@ -227,10 +216,7 @@ const FAQ_ITEMS: FAQ_DATA[] = [
 
 const SOCIAL_ITEMS: any[] = [whatsApp, telegram, linkedin, email];
 
-const SOFTWARE_ITEMS: any[] = [ios, android, mac, chrome, lion, firefox];
-
 export {
-  SOFTWARE_ITEMS,
   SOCIAL_ITEMS,
   FAQ_ITEMS,
   WALLET_ITEMS,
