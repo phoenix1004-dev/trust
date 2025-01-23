@@ -16,7 +16,7 @@ import bitcoin from "./images/coins/bitcoin.png";
 import bnb from "./images/coins/bnb.png";
 import cardano from "./images/coins/cardano.png";
 import chainlink from "./images/coins/chainlink.png";
-import dodge from "./images/coins/dodge.png";
+import doge from "./images/coins/doge.png";
 import eos from "./images/coins/eos.png";
 import etherium from "./images/coins/etherium.png";
 import kusama from "./images/coins/kusama.png";
@@ -83,7 +83,7 @@ export {
   bnb,
   cardano,
   chainlink,
-  dodge,
+  doge,
   eos,
   etherium,
   kusama,

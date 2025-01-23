@@ -45,7 +45,13 @@ type FAQ_DATA = {
   an: string;
 };
 
+type POINTER = {
+  top: number;
+  left: number;
+};
+
 export type {
+  POINTER,
   FAQ_DATA,
   WALLET_DATA,
   FUTURE_DATA,

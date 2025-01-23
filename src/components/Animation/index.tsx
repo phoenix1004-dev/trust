@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { FAQ_DATA } from "../../types";
+import { FAQ_DATA, POINTER } from "../../types";
 import { useState } from "react";
 import { minus, plus } from "../../assets/image";
 
@@ -12,6 +12,16 @@ type SliderProps = {
 
 type FAQProps = {
   item: FAQ_DATA;
+};
+
+type InitialAppearanceProps = {
+  className?: string;
+  style?: any;
+  from?: POINTER;
+  to?: POINTER;
+  time?: number;
+  delay?: number;
+  children: React.ReactNode;
 };
 
 export const Slider: React.FC<SliderProps> = ({
@@ -72,5 +82,28 @@ export const FAQAnimation: React.FC<FAQProps> = ({ item }) => {
         <p className="text-[17px] text-[#94969d]">{item.an}</p>
       </motion.div>
     </div>
+  );
+};
+
+export const InitialAppearance: React.FC<InitialAppearanceProps> = ({
+  className = "",
+  style = {},
+  from = { top: 0, left: 0 },
+  to = { top: 0, left: 0 },
+  time = 0.5,
+  delay = 0,
+  children,
+}) => {
+  return (
+    <motion.div
+      className={className}
+      style={style}
+      initial={{ ...from, opacity: 0 }}
+      whileInView={{ ...to, opacity: 1 }}
+      viewport={{ once: true }}
+      transition={{ delay: delay, duration: time, ease: "easeOut" }}
+    >
+      {children}
+    </motion.div>
   );
 };
