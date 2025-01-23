@@ -172,12 +172,12 @@ const FUTURE_ITEMS: FUTURE_DATA[] = [
 
 const WALLET_ITEMS: WALLET_DATA[] = [
   {
-    img: phone1,
+    img: phone2,
     title: "Enhanced Security and Peace of Mind",
     sub: "Our multisig wallet ensures that your digital assets are protected by requiring multiple approvals for every transaction. This reduces the risk of unauthorized access and provides you with the confidence that your funds are secure, even if one key is compromised.",
   },
   {
-    img: phone2,
+    img: phone1,
     title: "Full Control and Flexibility",
     sub: "With our wallet, you maintain full control over your assets. The ability to customize the number of required signers gives you the flexibility to tailor security to your specific needs, whether you're managing personal funds, corporate assets, or a joint account.",
   },
