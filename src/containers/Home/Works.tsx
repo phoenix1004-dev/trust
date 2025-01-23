@@ -1,3 +1,4 @@
+import { InitialAppearance } from "../../components/Animation";
 import {
   CardSubText,
   CardTitleText,
@@ -5,16 +6,27 @@ import {
 } from "../../components/common/Text";
 
 const HomeWorks = () => {
+  const animation = {
+    from: { top: 100, left: 0 },
+    to: { top: 0, left: 0 },
+    time: 1,
+  };
+
   return (
     <section className="w-full mt-16 mb-12 bg-full-screen-shadow bg-no-repeat">
       <div className="max-w-6xl mx-auto text-white">
-        <div className="text-center mb-10">
+        <InitialAppearance className="relative text-center mb-10" time={1}>
           <HeaderText className="text-center mb-8 white-text-shadow">
             How it Works
           </HeaderText>
-        </div>
+        </InitialAppearance>
         <div className="flex flex-col lg:flex-row justify-center lg:space-x-8 space-y-6 lg:space-y-0">
-          <div className="first-vector-card flex flex-col items-center w-full lg:w-[45%] px-4 mx-auto">
+          <InitialAppearance
+            className="relative first-vector-card flex flex-col items-center w-full lg:w-[45%] px-4 mx-auto"
+            from={animation.from}
+            to={animation.to}
+            time={animation.time}
+          >
             <div className="relative mb-6 w-full flex justify-start h-full">
               <div className="bg-[#09090a] border border-solid border-[#18181b] rounded-3xl py-8 px-4 w-full min-h-[200px] relative z-10">
                 <CardTitleText className="mb-2">Secure Setup</CardTitleText>
@@ -26,8 +38,14 @@ const HomeWorks = () => {
                 </CardSubText>
               </div>
             </div>
-          </div>
-          <div className="second-vector-card flex flex-col items-center w-full lg:w-[45%] px-4 mx-auto">
+          </InitialAppearance>
+          <InitialAppearance
+            className="relative second-vector-card flex flex-col items-center w-full lg:w-[45%] px-4 mx-auto"
+            from={animation.from}
+            to={animation.to}
+            time={animation.time}
+            delay={animation.time}
+          >
             <div className="relative mb-6 w-full flex justify-start h-full">
               <div className="bg-[#09090a] border border-solid border-[#18181b] rounded-3xl py-8 px-4 w-full min-h-[200px] relative z-10">
                 <h3 className="text-2xl font-semibold mb-2 sm:text-xl">
@@ -41,7 +59,7 @@ const HomeWorks = () => {
                 </p>
               </div>
             </div>
-          </div>
+          </InitialAppearance>
         </div>
       </div>
     </section>

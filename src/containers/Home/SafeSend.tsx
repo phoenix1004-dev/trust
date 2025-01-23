@@ -7,7 +7,7 @@ const HomeSafeSend = () => {
     <section className="w-full mt-8 px-4 bg-full-screen-shadow bg-no-repeat text-center">
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
-          <InitialAppearance className="relative lg:w-1/2 text-left" time={1}>
+          <InitialAppearance className="relative lg:w-1/2 text-left" time={2}>
             <HeaderText className="mb-6 white-text-shadow">
               What is SafeSend?
             </HeaderText>
@@ -41,7 +41,7 @@ const HomeSafeSend = () => {
               </div>
             </div>
           </InitialAppearance>
-          <InitialAppearance className="relative lg:w-1/2" time={1}>
+          <InitialAppearance className="relative lg:w-1/2" time={2}>
             <img
               src={lock}
               alt="SafeSend Features"

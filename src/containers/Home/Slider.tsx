@@ -5,8 +5,11 @@ import { COIN_DATA } from "../../types";
 const HomeSlider = () => {
   return (
     <div
-      className="flex w-full gap-[24px] overflow-x-hidden py-2"
-      style={{ transform: "rotate(-2deg)" }}
+      className="flex gap-[24px] overflow-x-hidden py-2"
+      style={{
+        width: "calc(100vw - 3px)",
+        transform: "rotate(-2deg)",
+      }}
     >
       <Slider dir="right" pos="-50%" time={40}>
         {COIN_ITEMS.map((coin: COIN_DATA, index: number) => (
