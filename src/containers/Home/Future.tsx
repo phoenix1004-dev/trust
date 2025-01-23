@@ -1,16 +1,17 @@
 import FutureCard from "../../components/Cards/Home/Future";
+import { HeaderText, NormalText } from "../../components/common/Text";
 import { FUTURE_ITEMS } from "../../constants/Items";
 import { FUTURE_DATA } from "../../types";
 
 const HomeFuture = () => {
   return (
     <section className="w-full mt-8 px-4 text-gray-800 bg-full-screen-shadow bg-no-repeat text-center py-16">
-      <h1 className="text-5xl font-bold text-white mb-4 white-text-shadow">
+      <HeaderText className="mb-4 white-text-shadow">
         The Future of Secure Crypto Management
-      </h1>
-      <h2 className="text-2xl text-gray-300 mb-8">
+      </HeaderText>
+      <NormalText className="mb-8">
         Key Features that Empower Your Crypto Journey
-      </h2>
+      </NormalText>
       <p className="text-gray-400 max-w-4xl mx-auto mb-16">
         Unveil the cutting-edge features of our multisig wallet, crafted to
         provide top-notch security and control over your digital assets. Here
