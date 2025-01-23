@@ -50,7 +50,7 @@ export const FAQAnimation: React.FC<FAQProps> = ({ item }) => {
           {item.qu}
         </p>
         <div
-          className="min-w-[40px] min-h-[40px] w-[40px] h-[40px] border border-solid border-[#1d1d20] rounded-[10px] flex items-center justify-center"
+          className="min-w-[40px] min-h-[40px] w-[40px] h-[40px] border border-solid border-[#1d1d20] rounded-[10px] flex items-center justify-center cursor-pointer"
           onClick={toggle}
         >
           <img className="" src={isOpen ? minus : plus} alt="plus" />
