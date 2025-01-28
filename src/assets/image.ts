@@ -58,8 +58,10 @@ import avatar2 from "./images/avatars/2.avif";
 import avatar3 from "./images/avatars/3.avif";
 import info from "./images/icons/information.svg";
 import apple from "./images/icons/apple.svg";
+import mask from "./images/backgrounds/mask1.svg";
 
 export {
+  mask,
   apple,
   info,
   avatar1,

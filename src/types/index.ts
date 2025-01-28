@@ -50,7 +50,13 @@ type POINTER = {
   left: number;
 };
 
+type SOCIAL_DATA = {
+  icon: any;
+  link: string;
+};
+
 export type {
+  SOCIAL_DATA,
   POINTER,
   FAQ_DATA,
   WALLET_DATA,

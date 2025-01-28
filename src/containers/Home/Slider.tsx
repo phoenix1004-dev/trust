@@ -10,6 +10,7 @@ const HomeSlider = () => {
         width: "calc(100vw - 3px)",
         maskImage:
           "linear-gradient(to right,transparent 0, black 128px, black calc(100% - 200px),transparent 100%)",
+        opacity: 0.6,
       }}
     >
       <Slider dir="right" pos="-50%" time={40}>

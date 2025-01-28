@@ -1,4 +1,5 @@
-import { SOCIAL_ITEMS } from "../../constants/Items";
+import { SOCIAL_ITEMS } from "../../constants/Links";
+import { SOCIAL_DATA } from "../../types";
 import ContactCard from "../Cards/Contact";
 import { HeaderText, NormalText } from "../common/Text";
 
@@ -27,7 +28,7 @@ const Contact = () => {
             </NormalText>
           </div>
           <div className="max-w-3xl mx-auto grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8 relative">
-            {SOCIAL_ITEMS.map((item: any, index: number) => (
+            {SOCIAL_ITEMS.map((item: SOCIAL_DATA, index: number) => (
               <ContactCard key={index} item={item} />
             ))}
           </div>

@@ -1,5 +1,5 @@
 import Layout from "../components/Layout";
-import HomeBenifits from "../containers/Home/Benifit";
+import HomeBenifits from "../containers/Home/Benefit";
 import HomeDownload from "../containers/Home/Download";
 import HomeFAQs from "../containers/Home/FAQs";
 import HomeFeatures from "../containers/Home/Features";

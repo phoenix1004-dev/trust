@@ -7,7 +7,6 @@ import {
   chainlink,
   connection,
   doge,
-  email,
   eos,
   etherium,
   face,
@@ -15,7 +14,6 @@ import {
   global,
   group,
   kusama,
-  linkedin,
   litecoin,
   matic,
   near,
@@ -30,12 +28,10 @@ import {
   support2,
   support3,
   support4,
-  telegram,
   tether,
   tron,
   uniswap,
   usdc,
-  whatsApp,
   xrp,
 } from "../assets/image";
 import {
@@ -218,10 +214,7 @@ const FAQ_ITEMS: FAQ_DATA[] = [
   },
 ];
 
-const SOCIAL_ITEMS: any[] = [whatsApp, telegram, linkedin, email];
-
 export {
-  SOCIAL_ITEMS,
   FAQ_ITEMS,
   WALLET_ITEMS,
   FUTURE_ITEMS,

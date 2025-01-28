@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { FAQ_DATA, POINTER } from "../../types";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { minus, plus } from "../../assets/image";
 
 type SliderProps = {
@@ -105,40 +105,5 @@ export const InitialAppearance: React.FC<InitialAppearanceProps> = ({
     >
       {children}
     </motion.div>
-  );
-};
-
-export const GradientAnimationBackground = () => {
-  useEffect(() => {
-    const cursor = document.querySelector("#cursor") as HTMLDivElement | null;
-
-    const onMouseChangePosition = (event: MouseEvent) => {
-      console.log("here->");
-      if (cursor) {
-        cursor.style.left = `${event.clientX}px`;
-        cursor.style.top = `${event.clientY}px`;
-      }
-    };
-
-    window.addEventListener("mousemove", onMouseChangePosition);
-
-    return () => {
-      window.removeEventListener("mousemove", onMouseChangePosition);
-    };
-  }, []);
-
-  return (
-    <>
-      <main className="gradient-container">
-        {Array(100).map((_, index) => (
-          <div key={index} className="gradient-row">
-            {Array(100).map((_, index) => (
-              <div key={index} className="hexagon"></div>
-            ))}
-          </div>
-        ))}
-      </main>
-      <div id="cursor"></div>
-    </>
   );
 };
