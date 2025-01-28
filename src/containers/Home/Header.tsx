@@ -1,18 +1,28 @@
-import { homeHeader } from "../../assets/image";
-import { InitialAppearance } from "../../components/Animation";
+import { appStore, googleAppStore, homeHeader, info } from "../../assets/image";
+import {
+  // GradientAnimationBackground,
+  InitialAppearance,
+} from "../../components/Animation";
 import { PhoneBgGradient } from "../../components/common/Background";
-import { TitleText } from "../../components/common/Text";
+import { NormalText, TitleText } from "../../components/common/Text";
+import UserGroup from "../../components/UserGroup";
 
 const HomeHeader = () => {
   return (
-    <section className="w-full lg:w-2/3 mt-[107px] font-bold text-white py-14 text-center flex flex-col items-center justify-center">
-      <InitialAppearance time={2}>
-        <div className="relative mb-7 mx-[40px] lg:mx-0">
-          <TitleText>
-            <span className="white-text-shadow">next</span>
-            <span className="text-lime-400">level </span>
-            <span className="text-neutral-200">
-              advanced self custody technology
+    <section className="relative w-full lg:w-2/3 mt-[157px] font-bold text-white py-14 text-center flex flex-col items-center justify-center">
+      {/* <div className="absolute top-0 left-0 w-screen h-full">
+        <GradientAnimationBackground />
+      </div> */}
+      <InitialAppearance className="justify-items-center" time={2}>
+        <UserGroup />
+        <div className="relative mb-7 mt-10 mx-[40px] lg:mx-0">
+          <TitleText className="leading-[70px]">
+            <span className="white-text-shadow text-[100px]">
+              OWN YOUR PRIVACY
+            </span>
+            <br />
+            <span className="text-neutral-200 text-[40px] font-normal">
+              the ultimate self-custody crypto wallet
             </span>
           </TitleText>
         </div>
@@ -23,6 +33,21 @@ const HomeHeader = () => {
             className="main-mobiles responsive-image"
           />
           <PhoneBgGradient />
+        </div>
+        <div className="flex gap-[10px]">
+          <div className="flex items-center gap-1">
+            <img className="w-[20px] h-[20px]" src={info} alt="informaion" />
+            <NormalText>App Available For</NormalText>
+          </div>
+          <div className="flex gap-[10px] bg-[#0e0e10] border border-solid border-[#1d1d20] rounded-full px-3 py-2">
+            <img
+              className="w-[28px] h-[28px]"
+              src={googleAppStore}
+              alt="google app store"
+            />
+            <div className="border-r border-solid border-[#1d1d20]" />
+            <img className="w-[28px] h-[28px]" src={appStore} alt="app store" />
+          </div>
         </div>
       </InitialAppearance>
     </section>

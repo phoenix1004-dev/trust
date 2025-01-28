@@ -20,7 +20,7 @@ const HomeSafeSend = () => {
             </NormalText>
             <div className="flex flex-wrap gap-6">
               <div className="flex items-center gap-3">
-                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center">
+                <div className="w-12 h-12 rounded-full flex items-center justify-center bg-white">
                   <img src={secure} alt="secure" />
                 </div>
                 <div>
@@ -31,7 +31,7 @@ const HomeSafeSend = () => {
                 </div>
               </div>
               <div className="flex items-center gap-3">
-                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-purple-500 to-pink-600 flex items-center justify-center">
+                <div className="w-12 h-12 rounded-full flex items-center justify-center bg-white">
                   <img src={privateIcon} alt="private" />
                 </div>
                 <div>

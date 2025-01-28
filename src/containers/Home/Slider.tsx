@@ -8,7 +8,8 @@ const HomeSlider = () => {
       className="flex gap-[24px] overflow-x-hidden py-2"
       style={{
         width: "calc(100vw - 3px)",
-        transform: "rotate(-2deg)",
+        maskImage:
+          "linear-gradient(to right,transparent 0, black 128px, black calc(100% - 200px),transparent 100%)",
       }}
     >
       <Slider dir="right" pos="-50%" time={40}>

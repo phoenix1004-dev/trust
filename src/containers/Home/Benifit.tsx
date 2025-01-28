@@ -1,4 +1,3 @@
-import { face } from "../../assets/image";
 import { InitialAppearance } from "../../components/Animation";
 import BenifitCard from "../../components/Cards/Home/Benifit";
 import { HeaderText } from "../../components/common/Text";
@@ -47,18 +46,6 @@ const HomeBenifits = () => {
             "radial-gradient(40% 50% at 50% 50%,#28282c 0%,rgb(0,0,0) 100%)",
         }}
       />
-      <InitialAppearance
-        className="relative justify-items-center"
-        from={animations.header.from}
-        to={animations.header.to}
-        time={animations.header.time}
-        delay={animations.header.delay}
-      >
-        <div className="flex w-max bg-[#131315] border border-solid border-[#1d1d20] gap-[3px] px-[12px] py-[10px] rounded-full items-center">
-          <img className="w-[20px] h-[20px]" src={face} alt="star" />
-          <p className="text-[16px] text-white">Benifits</p>
-        </div>
-      </InitialAppearance>
       <InitialAppearance
         className="relative justify-items-center"
         from={animations.header.from}

@@ -53,8 +53,18 @@ import global from "./images/icons/global.svg";
 import group from "./images/icons/group.svg";
 import price from "./images/icons/price.svg";
 import share from "./images/icons/share.svg";
+import avatar1 from "./images/avatars/1.avif";
+import avatar2 from "./images/avatars/2.avif";
+import avatar3 from "./images/avatars/3.avif";
+import info from "./images/icons/information.svg";
+import apple from "./images/icons/apple.svg";
 
 export {
+  apple,
+  info,
+  avatar1,
+  avatar2,
+  avatar3,
   share,
   price,
   group,
