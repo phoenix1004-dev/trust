@@ -1,5 +1,5 @@
 import { InitialAppearance } from "../../components/Animation";
-import FutureCard from "../../components/Cards/Home/Future";
+import Card from "../../components/common/Card";
 import { HeaderText, NormalText } from "../../components/common/Text";
 import { FUTURE_ITEMS } from "../../constants/Items";
 import { FUTURE_DATA } from "../../types";
@@ -68,16 +68,17 @@ const HomeFuture = () => {
           are the six main features that set our wallet apart in the industry.{" "}
         </p>
       </InitialAppearance>
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-white">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 text-white justify-items-center">
         {FUTURE_ITEMS.map((item: FUTURE_DATA, index: number) => (
           <InitialAppearance
+            key={index}
             className="relative"
             from={animations.card.from}
             to={animations.card.to}
             time={animations.card.time}
             delay={index * 0.7}
           >
-            <FutureCard key={index} item={item} />
+            <Card title={item.title} sub={item.sub} image={item.img} />
           </InitialAppearance>
         ))}
       </div>

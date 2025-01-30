@@ -59,8 +59,30 @@ import avatar3 from "./images/avatars/3.avif";
 import info from "./images/icons/information.svg";
 import apple from "./images/icons/apple.svg";
 import mask from "./images/backgrounds/mask1.svg";
+import signature from "./images/cards/signature.png";
+import custody from "./images/cards/custody.png";
+import swap from "./images/cards/swap.png";
+import security from "./images/cards/security.png";
+import colobrate from "./images/cards/colobrate.png";
+import flexible from "./images/cards/flexible.png";
+import dashboard from "./images/cards/dashboard.png";
+import multisig from "./images/cards/multisig.png";
+import transaction from "./images/cards/transaction.png";
+import widget from "./images/cards/widget.png";
+import portfolio from "./images/cards/portfolio.png";
 
 export {
+  portfolio,
+  widget,
+  transaction,
+  multisig,
+  dashboard,
+  flexible,
+  colobrate,
+  security,
+  swap,
+  custody,
+  signature,
   mask,
   apple,
   info,

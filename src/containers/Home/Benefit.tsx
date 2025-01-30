@@ -1,5 +1,5 @@
 import { InitialAppearance } from "../../components/Animation";
-import BenifitCard from "../../components/Cards/Home/Benifit";
+import Card from "../../components/common/Card";
 import { HeaderText } from "../../components/common/Text";
 import { BENIFIT_ITEMS } from "../../constants/Items";
 import { BENIFIT_DATA } from "../../types";
@@ -58,16 +58,22 @@ const HomeBenifits = () => {
         </div>
       </InitialAppearance>
       <div className="max-w-6xl mx-auto">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-8 gap-x-6 py-4 text-white justify-items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-y-8 gap-x-6 py-4 text-white justify-items-center">
           {BENIFIT_ITEMS.map((item: BENIFIT_DATA, index: number) => (
             <InitialAppearance
+              key={index}
               className="relative justify-items-center"
               from={animations.card[index].from}
               to={animations.card[index].to}
               time={animations.card[index].time}
               delay={index * 0.5}
             >
-              <BenifitCard key={index} item={item} />
+              <Card
+                title={item.title}
+                image={item.img}
+                sub={item.sub}
+                desc={item.desc}
+              />
             </InitialAppearance>
           ))}
         </div>

@@ -1,6 +1,6 @@
 import { feature } from "../../assets/image";
 import { InitialAppearance } from "../../components/Animation";
-import FeatureCard from "../../components/Cards/Home/Feature";
+import Card from "../../components/common/Card";
 import { HeaderText } from "../../components/common/Text";
 import { FEATURE_ITEMS } from "../../constants/Items";
 import { FEATURE_DATA } from "../../types";
@@ -35,7 +35,7 @@ const HomeFeatures = () => {
         <HeaderText className="white-text-shadow">Key Features</HeaderText>
       </div>
       <section className="w-full mb-14 px-4 justify-items-center">
-        <div className="max-w-6xl grid grid-cols-1 md:grid-cols-3 gap-8 text-white items-center relative">
+        <div className="max-w-6xl grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 text-white items-center relative">
           {FEATURE_ITEMS.map((item: FEATURE_DATA, index: number) => (
             <InitialAppearance
               key={index}
@@ -44,7 +44,12 @@ const HomeFeatures = () => {
               to={animations[index].to}
               time={animations[index].time}
             >
-              <FeatureCard item={item} />
+              <Card
+                title={item.title}
+                desc={item.desc}
+                image={item.icon}
+                height={500}
+              />
             </InitialAppearance>
           ))}
         </div>
