@@ -1,7 +1,9 @@
 import { motion } from "framer-motion";
+import Player from "lottie-react";
 import { FAQ_DATA, POINTER } from "../../types";
 import { useState } from "react";
 import { minus, plus } from "../../assets/image";
+import animationData from "../../assets/animations/hero-svg.json";
 
 type SliderProps = {
   dir: "right" | "left";
@@ -105,5 +107,21 @@ export const InitialAppearance: React.FC<InitialAppearanceProps> = ({
     >
       {children}
     </motion.div>
+  );
+};
+
+export const BgAnimation = () => {
+  return (
+    <div
+      className="absolute w-full z-0"
+      style={{ height: "calc(100vh - 157px" }}
+    >
+      <Player
+        autoPlay
+        loop
+        animationData={animationData}
+        style={{ width: "100%", height: "100%" }}
+      />
+    </div>
   );
 };
