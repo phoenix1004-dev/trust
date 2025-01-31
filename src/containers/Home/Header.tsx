@@ -6,19 +6,24 @@ import UserGroup from "../../components/UserGroup";
 const HomeHeader = () => {
   return (
     <section
-      className="relative w-full lg:w-2/3 mt-[157px] font-bold text-white py-14 text-center flex flex-col items-center justify-center"
-      style={{ height: "calc(100vh - 157px)" }}
+      className="relative w-full lg:w-2/3 mt-[40px] md:mt-[157px] font-bold text-white py-14 text-center flex flex-col items-center justify-center"
+      style={{
+        height:
+          window.innerWidth >= 768
+            ? "calc(100vh - 157px)"
+            : "calc(100vh - 40px)",
+      }}
     >
       <BgAnimation />
-      <InitialAppearance className="justify-items-center z-10" time={2}>
+      <InitialAppearance className="h-full justify-items-center z-10" time={2}>
         <UserGroup />
         <div className="relative mb-7 mt-10 mx-[40px] lg:mx-0">
-          <TitleText className="leading-[70px]">
-            <span className="white-text-shadow text-[100px]">
+          <TitleText className="leading-[40px] md:leading-[70px]">
+            <span className="white-text-shadow text-[36px] sm:text-[56px] md:text-[70px] xl:text-[80px] 2xl:text-[100px]">
               OWN YOUR PRIVACY
             </span>
             <br />
-            <span className="text-neutral-200 text-[40px] font-normal">
+            <span className="text-neutral-200 text-[20px] sm:text-[28px] md:text-[40px] font-normal">
               the ultimate self-custody crypto wallet
             </span>
           </TitleText>

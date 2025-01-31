@@ -8,7 +8,7 @@ type LayoutProps = {
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
-    <div className="w-full h-full justify-items-center">
+    <div className="w-full h-full justify-items-center overflow-hidden">
       <Nav />
       {children}
       <Contact />

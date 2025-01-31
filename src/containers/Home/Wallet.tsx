@@ -22,9 +22,9 @@ const HomeWallet = () => {
                   <WalletCard key={index} item={item} />
                 ))}
               </div>
-              <div className="w-1/2 aspect-square h-[584px] relative">
+              <div className="w-1/2 aspect-square h-[280px] md:h-[584px] relative">
                 <div
-                  className="absolute left-1/2 -translate-x-1/2 -translate-y-1/2 top-1/2 rounded-full h-[300px] aspect-square"
+                  className="absolute left-1/2 -translate-x-1/2 -translate-y-1/2 top-1/2 rounded-full h-[280px] md:h-[300px] aspect-square"
                   style={{
                     background:
                       "radial-gradient(50% 49.99999999999999% at 50% 49.99999999999999%,#ffffff 0%,rgba(255,255,255,0) 100%)",
@@ -33,7 +33,7 @@ const HomeWallet = () => {
                 />
                 <div className="flex flex-col relative items-center w-full h-full rounded-[24px] overflow-y-hidden border border-solid border-[#28282c]">
                   <img
-                    className="w-[282px] absolute top-[72px] z-2 rounded-[32px]"
+                    className="w-[282px] absolute top-0 md:top-[72px] z-2 rounded-[32px]"
                     src={phone1}
                     alt="phone4"
                   />

@@ -24,8 +24,8 @@ const MobileNav = () => {
   };
 
   return (
-    <div className="w-full px-[30px] py-[24px] lg:hidden border-b border-solid border-[#1d1d20] flex justify-between">
-      <FavIcon />
+    <div className="w-full px-[30px] py-[12px] sm:py-[24px] lg:hidden border-b border-solid border-[#1d1d20] flex justify-between">
+      <FavIcon className="w-1/2" />
       <div className="flex items-center" onClick={toggleMenu} ref={ref}>
         <DropdownMenuButton />
         <div

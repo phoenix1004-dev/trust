@@ -9,10 +9,13 @@ type Props = {
 const Card: React.FC<Props> = ({ title, sub, desc, image, height = 552 }) => {
   return (
     <div
-      className="relative flex flex-col w-[368px] overflow-hidden rounded-[32px] border border-solid border-[#18181a] bg-[#09090a]"
+      className="relative flex flex-col w-full max-w-[368px] overflow-hidden rounded-[32px] border border-solid border-[#18181a] bg-[#09090a]"
       style={{ height: height }}
     >
-      <div className="absolute top-[16px] left-[16px] right-[16px] w-[336px] h-[336px]">
+      <div
+        className="absolute top-[16px] left-[16px] right-[16px] max-w-[336px] h-[336px]"
+        style={{ width: "calc(100% - 32px)" }}
+      >
         <div className="relative w-full h-full overflow-hidden rounded-[32px]">
           <div className="absolute left-1/2 -translate-x-1/2 w-full">
             <img className="w-full h-full" src={image} alt={title} />
