@@ -34,9 +34,11 @@ const HomeSupport = () => {
 
   return (
     <section className="w-full py-16 px-4 text-center justify-items-center">
-      <div className="flex w-max bg-[#131315] border border-solid border-[#1d1d20] gap-[3px] px-[12px] py-[10px] rounded-full items-center">
-        <img className="w-[20px] h-[20px]" src={currency} alt="star" />
-        <p className="text-[16px] text-white">Token Currencies</p>
+      <div className="w-full flex justify-center">
+        <div className="flex w-max bg-[#131315] border border-solid border-[#1d1d20] gap-[3px] px-[12px] py-[10px] rounded-full items-center">
+          <img className="w-[20px] h-[20px]" src={currency} alt="star" />
+          <p className="text-[16px] text-white">Token Currencies</p>
+        </div>
       </div>
       <InitialAppearance
         className="relative"
@@ -79,6 +81,7 @@ const HomeSupport = () => {
             className="relative"
             from={animations.card.from}
             to={animations.card.to}
+            key={index}
             time={animations.card.time}
             delay={index * 0.5}
           >

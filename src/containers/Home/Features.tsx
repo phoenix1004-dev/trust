@@ -15,9 +15,11 @@ const HomeFeatures = () => {
   return (
     <section className="w-full px-4 text-gray-800 mb-16 justify-items-center pt-10">
       <InitialAppearance className="w-full justify-items-center" time={1}>
-        <div className="flex w-max bg-[#131315] border border-solid border-[#1d1d20] gap-[3px] px-[12px] py-[10px] rounded-full items-center">
-          <img className="w-[20px] h-[20px]" src={feature} alt="star" />
-          <p className="text-[16px] text-white">Features</p>
+        <div className="flex w-full justify-center">
+          <div className="flex w-max bg-[#131315] border border-solid border-[#1d1d20] gap-[3px] px-[12px] py-[10px] rounded-full items-center">
+            <img className="w-[20px] h-[20px]" src={feature} alt="star" />
+            <p className="text-[16px] text-white">Features</p>
+          </div>
         </div>
         <div className="text-center mb-8 py-4">
           <HeaderText className="white-text-shadow">Key Features</HeaderText>

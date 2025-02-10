@@ -20,9 +20,11 @@ const HomeFAQs = () => {
             "radial-gradient(40% 50% at 50% 50%,#28282c 0%,rgb(0,0,0) 100%)",
         }}
       />
-      <div className="flex w-max bg-[#131315] border border-solid border-[#1d1d20] gap-[3px] px-[12px] py-[10px] rounded-full items-center">
-        <img className="w-[20px] h-[20px]" src={question} alt="star" />
-        <p className="text-[16px] text-white">FAQs</p>
+      <div className="w-full flex justify-center">
+        <div className="flex w-max bg-[#131315] border border-solid border-[#1d1d20] gap-[3px] px-[12px] py-[10px] rounded-full items-center">
+          <img className="w-[20px] h-[20px]" src={question} alt="star" />
+          <p className="text-[16px] text-white">FAQs</p>
+        </div>
       </div>
       <div className="max-w-4xl mx-auto text-white relative">
         <div className="text-center mb-16">

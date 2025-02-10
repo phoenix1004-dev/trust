@@ -21,7 +21,7 @@ const HomeHeader = () => {
             </span>
           </TitleText>
         </div>
-        <div className="flex gap-[10px]">
+        <div className="flex gap-[10px] w-full justify-center">
           <div className="flex items-center gap-1">
             <img className="w-[20px] h-[20px]" src={info} alt="informaion" />
             <NormalText>App Available For</NormalText>
@@ -42,7 +42,7 @@ const HomeHeader = () => {
             alt="Next Level Technology"
             className="main-mobiles responsive-image"
           />
-          <PhoneBgGradient />
+          {/* <PhoneBgGradient /> */}
         </div>
       </InitialAppearance>
     </section>

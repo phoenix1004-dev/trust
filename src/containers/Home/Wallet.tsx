@@ -17,12 +17,12 @@ const HomeWallet = () => {
               Unmatched Security and Total Control for Your Digital Assets
             </NormalText>
             <div className="flex flex-col xl:flex-row gap-[50px] w-full h-max xl:h-[784px] items-center overflow-y-hidden">
-              <div className="max-w-6xl mx-auto space-y-16 mt-5 flex w-1/2 flex-col">
+              <div className="max-w-6xl mx-auto space-y-16 mt-5 flex w-full md:w-1/2 flex-col">
                 {WALLET_ITEMS.map((item: WALLET_DATA, index: number) => (
                   <WalletCard key={index} item={item} />
                 ))}
               </div>
-              <div className="w-1/2 aspect-square h-[280px] md:h-[584px] relative bg-black">
+              <div className="w-full max-w-[400px] md:max-w-full md:w-1/2 aspect-square h-[280px] md:h-[584px] relative bg-black overflow-hidden">
                 <div
                   className="absolute left-1/2 -translate-x-1/2 -translate-y-1/2 top-1/2 rounded-full h-[280px] md:h-[300px] aspect-square"
                   style={{
