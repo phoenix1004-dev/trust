@@ -1,6 +1,5 @@
 import { appStore, googleAppStore, homeHeader, info } from "../../assets/image";
 import { GradientBg, InitialAppearance } from "../../components/Animation";
-import { PhoneBgGradient } from "../../components/common/Background";
 import { NormalText, TitleText } from "../../components/common/Text";
 import UserGroup from "../../components/UserGroup";
 

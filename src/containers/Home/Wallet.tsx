@@ -22,7 +22,15 @@ const HomeWallet = () => {
                   <WalletCard key={index} item={item} />
                 ))}
               </div>
-              <div className="w-full max-w-[400px] md:max-w-full md:w-1/2 aspect-square h-[280px] md:h-[584px] relative bg-black overflow-hidden">
+              <div
+                className="w-full max-w-[400px] md:max-w-full md:w-1/2 aspect-square h-[280px] md:h-[584px] relative bg-black overflow-hidden"
+                style={{ WebkitTransform: "translateZ(0)" }}
+              >
+                <img
+                  className="w-full h-[184px] md:h-[254px] absolute bottom-0 left-0 object-cover z-[4]"
+                  src={mask}
+                  alt="phone4"
+                />
                 <div
                   className="absolute left-1/2 -translate-x-1/2 -translate-y-1/2 top-1/2 rounded-full h-[280px] md:h-[300px] aspect-square"
                   style={{
@@ -31,18 +39,13 @@ const HomeWallet = () => {
                     filter: "blur(100px)",
                   }}
                 />
-                <div className="flex flex-col relative items-center w-full h-full rounded-[24px] overflow-y-hidden border border-solid border-[#28282c]">
+                <div className="flex flex-col relative items-center w-full h-full rounded-[24px] overflow-hidden border border-solid border-[#28282c]">
                   <img
                     className="w-[282px] h-full absolute top-0 md:top-[72px] z-2 rounded-[32px] object-cover"
                     src={homeHeader}
                     alt="phone4"
                   />
                 </div>
-                <img
-                  className="w-full h-[184px] md:h-[254px] absolute bottom-0 z-4"
-                  src={mask}
-                  alt="phone4"
-                />
               </div>
             </div>
           </div>
