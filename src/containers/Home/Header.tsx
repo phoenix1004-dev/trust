@@ -1,20 +1,13 @@
-import { appStore, googleAppStore, info } from "../../assets/image";
-import { BgAnimation, InitialAppearance } from "../../components/Animation";
+import { appStore, googleAppStore, homeHeader, info } from "../../assets/image";
+import { GradientBg, InitialAppearance } from "../../components/Animation";
+import { PhoneBgGradient } from "../../components/common/Background";
 import { NormalText, TitleText } from "../../components/common/Text";
 import UserGroup from "../../components/UserGroup";
 
 const HomeHeader = () => {
   return (
-    <section
-      className="relative w-full lg:w-2/3 mt-[40px] md:mt-[157px] font-bold text-white py-14 text-center flex flex-col items-center justify-center"
-      style={{
-        height:
-          window.innerWidth >= 768
-            ? "calc(100vh - 157px)"
-            : "calc(100vh - 40px)",
-      }}
-    >
-      <BgAnimation />
+    <section className="relative w-full lg:w-2/3 mt-[40px] md:mt-[157px] font-bold text-white py-14 text-center flex flex-col items-center justify-center">
+      <GradientBg />
       <InitialAppearance className="h-full justify-items-center z-10" time={2}>
         <UserGroup />
         <div className="relative mb-7 mt-10 mx-[40px] lg:mx-0">
@@ -28,14 +21,14 @@ const HomeHeader = () => {
             </span>
           </TitleText>
         </div>
-        {/* <div className="flex justify-center relative">
+        <div className="flex justify-center relative">
           <img
             src={homeHeader}
             alt="Next Level Technology"
             className="main-mobiles responsive-image"
           />
           <PhoneBgGradient />
-        </div> */}
+        </div>
         <div className="flex gap-[10px]">
           <div className="flex items-center gap-1">
             <img className="w-[20px] h-[20px]" src={info} alt="informaion" />

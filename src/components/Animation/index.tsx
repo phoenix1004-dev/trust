@@ -26,6 +26,11 @@ type InitialAppearanceProps = {
   children: React.ReactNode;
 };
 
+type AnimationButtonProps = {
+  className?: string;
+  children?: React.ReactNode;
+};
+
 export const Slider: React.FC<SliderProps> = ({
   dir,
   time = 10,
@@ -122,6 +127,29 @@ export const BgAnimation = () => {
         animationData={animationData}
         style={{ width: "100%", height: "100%" }}
       />
+    </div>
+  );
+};
+
+export const GradientBg = () => {
+  return (
+    <div className="wrapper-of-wrapper">
+      <div className="wrapper">
+        <div className="rainbow"></div>
+      </div>
+    </div>
+  );
+};
+
+export const AnimationButton: React.FC<AnimationButtonProps> = ({
+  className,
+  children,
+}) => {
+  return (
+    <div className={className}>
+      <button className="shiny-cta">
+        <span>{children}</span>
+      </button>
     </div>
   );
 };

@@ -1,4 +1,4 @@
-import { NormalButton } from "../../common/Button";
+import { AnimationButton } from "../../Animation";
 import { FavIcon } from "../../common/Image";
 import NavMenuList from "./NavMenuList";
 
@@ -15,7 +15,9 @@ const DesktopNav = () => {
         <div className="flex">
           <NavMenuList />
         </div>
-        <NormalButton className="absolute right-0">Sign Up Now</NormalButton>
+        <AnimationButton className="absolute right-0">
+          Sign Up Now
+        </AnimationButton>
       </div>
     </div>
   );

@@ -15,10 +15,10 @@ const HomePage = () => {
   return (
     <Layout>
       <HomeHeader />
+      <HomeSlider />
       <HomeFeatures />
       <HomeSafeSend />
       <HomeWorks />
-      <HomeSlider />
       <HomeSupport />
       <HomeBenifits />
       <HomeFuture />

@@ -1,6 +1,6 @@
 import { MENU_LINKS } from "../../../constants/Links";
 import { MENU_LINK } from "../../../types";
-import { NormalButton } from "../../common/Button";
+import { AnimationButton } from "../../Animation";
 import NavMenuItem from "./NavMenuItem";
 
 const NavMenuList = () => {
@@ -9,7 +9,7 @@ const NavMenuList = () => {
       {MENU_LINKS.map((item: MENU_LINK, index: number) => (
         <NavMenuItem key={index} item={item} />
       ))}
-      <NormalButton className="w-[180px]">Sign Up Now</NormalButton>
+      <AnimationButton className="w-[180px]">Sign Up Now</AnimationButton>
     </>
   );
 };

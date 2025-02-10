@@ -53,9 +53,9 @@ import global from "./images/icons/global.svg";
 import group from "./images/icons/group.svg";
 import price from "./images/icons/price.svg";
 import share from "./images/icons/share.svg";
-import avatar1 from "./images/avatars/1.avif";
-import avatar2 from "./images/avatars/2.avif";
-import avatar3 from "./images/avatars/3.avif";
+import avatar1 from "./images/avatars/1.svg";
+import avatar2 from "./images/avatars/2.svg";
+import avatar3 from "./images/avatars/3.svg";
 import info from "./images/icons/information.svg";
 import apple from "./images/icons/apple.svg";
 import mask from "./images/backgrounds/mask1.svg";
@@ -70,8 +70,10 @@ import multisig from "./images/cards/multisig.png";
 import transaction from "./images/cards/transaction.png";
 import widget from "./images/cards/widget.png";
 import portfolio from "./images/cards/portfolio.png";
+import twoArrowws from "./images/icons/twoArrows.png";
 
 export {
+  twoArrowws,
   portfolio,
   widget,
   transaction,

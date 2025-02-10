@@ -25,7 +25,7 @@ const DropdownMenuLinkText: React.FC<NormalTextProps> = ({
 const TitleText: React.FC<NormalTextProps> = ({ className, children }) => {
   return (
     <h1
-      className={`text-[34px] md:text-[60px] xl:text-[64px] text-center font-bold ${className}`}
+      className={`text-[34px] md:text-[60px] xl:text-[70px] text-center font-extrabold ${className}`}
     >
       {children}
     </h1>
