@@ -26,7 +26,7 @@ const Footer = () => {
               Copyright 2024 Trust Vault Holdings. All rights reserved.
             </p>
             <p className="mb-3 mt-3">Email: info@trustvault.app</p>
-            <p className="max-w-lg mb-3 mt-3 footer-info-text text-sm">
+            <p className="max-w-lg mb-3 mt-3 footer-info-text text-sm font-thin">
               The information provided on this website is for informational
               purposes only and should not be considered as financial or
               investment advice. Cryptocurrency transactions carry inherent

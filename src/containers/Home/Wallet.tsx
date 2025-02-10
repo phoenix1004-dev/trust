@@ -1,4 +1,4 @@
-import { mask, phone1 } from "../../assets/image";
+import { homeHeader, mask } from "../../assets/image";
 import WalletCard from "../../components/Cards/Home/Wallet";
 import { HeaderText, NormalText } from "../../components/common/Text";
 import { WALLET_ITEMS } from "../../constants/Items";
@@ -33,8 +33,8 @@ const HomeWallet = () => {
                 />
                 <div className="flex flex-col relative items-center w-full h-full rounded-[24px] overflow-y-hidden border border-solid border-[#28282c]">
                   <img
-                    className="w-[282px] absolute top-0 md:top-[72px] z-2 rounded-[32px]"
-                    src={phone1}
+                    className="w-[282px] h-full absolute top-0 md:top-[72px] z-2 rounded-[32px] object-cover"
+                    src={homeHeader}
                     alt="phone4"
                   />
                 </div>

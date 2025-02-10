@@ -27,10 +27,10 @@ const Card: React.FC<Props> = ({ title, sub, desc, image, height = 552 }) => {
           <div className="mb-[12px] text-[24px] leading-[20px] font-medium text-[rgb(248_248_248/0.95)]">
             {title}
           </div>
-          <div className="mb-[24px] text-[16px] leading-[16px] font-medium text-[rgb(248_248_248/0.5)]">
+          <div className="mb-[24px] text-[16px] leading-[16px] font-light text-[rgb(248_248_248/0.5)]">
             {sub}
           </div>
-          <div className="mb-[24px] text-[16px] leading-[16px] font-medium text-[rgb(248_248_248/0.5)]">
+          <div className="mb-[24px] text-[16px] leading-[16px] font-light text-[rgb(248_248_248/0.5)]">
             {desc}
           </div>
         </div>
