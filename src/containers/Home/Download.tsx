@@ -13,7 +13,7 @@ const HomeDownload = () => {
     <section className="w-full py-16 px-4">
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
-          <div className="lg:w-1/2">
+          <div className="lg:w-1/2 bg-black z-10">
             <img
               src={homeDownload}
               alt="Download App"
