@@ -157,7 +157,7 @@ export const AnimationButton: React.FC<AnimationButtonProps> = ({
 
 export const FixedBgAnimation = () => {
   return (
-    <div className="fixed w-screen h-screen z-100">
+    <div className="fixed w-screen h-screen">
       <div className=" h-full w-full relative flex flex-col items-center justify-center antialiased">
         <BackgroundBeams />
       </div>

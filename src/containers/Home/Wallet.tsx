@@ -22,7 +22,7 @@ const HomeWallet = () => {
                   <WalletCard key={index} item={item} />
                 ))}
               </div>
-              <div className="w-1/2 aspect-square h-[280px] md:h-[584px] relative">
+              <div className="w-1/2 aspect-square h-[280px] md:h-[584px] relative bg-black">
                 <div
                   className="absolute left-1/2 -translate-x-1/2 -translate-y-1/2 top-1/2 rounded-full h-[280px] md:h-[300px] aspect-square"
                   style={{
