@@ -4,6 +4,7 @@ import { FAQ_DATA, POINTER } from "../../types";
 import { useState } from "react";
 import { minus, plus } from "../../assets/image";
 import animationData from "../../assets/animations/hero-svg.json";
+import { BackgroundBeams } from "./BackgroundBeams";
 
 type SliderProps = {
   dir: "right" | "left";
@@ -150,6 +151,16 @@ export const AnimationButton: React.FC<AnimationButtonProps> = ({
       <button className="shiny-cta">
         <span>{children}</span>
       </button>
+    </div>
+  );
+};
+
+export const FixedBgAnimation = () => {
+  return (
+    <div className="fixed w-screen h-screen z-100">
+      <div className=" h-full w-full relative flex flex-col items-center justify-center antialiased">
+        <BackgroundBeams />
+      </div>
     </div>
   );
 };

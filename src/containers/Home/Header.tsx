@@ -21,14 +21,6 @@ const HomeHeader = () => {
             </span>
           </TitleText>
         </div>
-        <div className="flex justify-center relative">
-          <img
-            src={homeHeader}
-            alt="Next Level Technology"
-            className="main-mobiles responsive-image"
-          />
-          <PhoneBgGradient />
-        </div>
         <div className="flex gap-[10px]">
           <div className="flex items-center gap-1">
             <img className="w-[20px] h-[20px]" src={info} alt="informaion" />
@@ -43,6 +35,14 @@ const HomeHeader = () => {
             <div className="border-r border-solid border-[#1d1d20]" />
             <img className="w-[28px] h-[28px]" src={appStore} alt="app store" />
           </div>
+        </div>
+        <div className="flex justify-center relative">
+          <img
+            src={homeHeader}
+            alt="Next Level Technology"
+            className="main-mobiles responsive-image"
+          />
+          <PhoneBgGradient />
         </div>
       </InitialAppearance>
     </section>
