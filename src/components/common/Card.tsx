@@ -16,9 +16,13 @@ const Card: React.FC<Props> = ({ title, sub, desc, image, height = 552 }) => {
         className="absolute top-[16px] left-[16px] right-[16px] max-w-[336px] h-[336px]"
         style={{ width: "calc(100% - 32px)" }}
       >
-        <div className="relative w-full h-full overflow-hidden rounded-[32px]">
+        <div className="relative w-full h-full overflow-hidden rounded-[32px] z-10">
           <div className="absolute left-1/2 -translate-x-1/2 w-full">
-            <img className="w-full h-full" src={image} alt={title} />
+            <img
+              className="w-full h-full transition-transform duration-300 ease-in-out hover:scale-125"
+              src={image}
+              alt={title}
+            />
           </div>
         </div>
       </div>
