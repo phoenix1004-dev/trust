@@ -1,5 +1,4 @@
 import { privateIcon, secure, lock } from "../../assets/image";
-import { InitialAppearance } from "../../components/Animation";
 import { HeaderText, NormalText } from "../../components/common/Text";
 
 const HomeSafeSend = () => {
@@ -7,7 +6,7 @@ const HomeSafeSend = () => {
     <section className="w-full mt-8 px-4 bg-full-screen-shadow bg-no-repeat text-center">
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
-          <InitialAppearance className="relative lg:w-1/2 text-left" time={2}>
+          <div className="relative lg:w-1/2 text-left">
             <HeaderText className="mb-6 white-text-shadow">
               What is SafeSend?
             </HeaderText>
@@ -40,14 +39,14 @@ const HomeSafeSend = () => {
                 </div>
               </div>
             </div>
-          </InitialAppearance>
-          <InitialAppearance className="relative lg:w-1/2" time={2}>
+          </div>
+          <div className="relative lg:w-1/2">
             <img
               src={lock}
               alt="SafeSend Features"
               className="w-full max-w-md mx-auto"
             />
-          </InitialAppearance>
+          </div>
         </div>
       </div>
     </section>
