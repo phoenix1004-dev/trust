@@ -13,7 +13,7 @@ const HomeWorks = () => {
   };
 
   return (
-    <section className="w-full mt-16 mb-12 bg-full-screen-shadow bg-no-repeat">
+    <section className="relative w-full mt-16 mb-12 bg-full-screen-shadow bg-black z-[10]">
       <div className="max-w-6xl mx-auto text-white">
         <InitialAppearance className="relative text-center mb-10" time={1}>
           <HeaderText className="text-center mb-8 white-text-shadow">

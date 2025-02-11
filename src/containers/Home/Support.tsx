@@ -6,7 +6,7 @@ import { SUPPORT_DATA } from "../../types";
 
 const HomeSupport = () => {
   return (
-    <section className="w-full py-16 px-4 text-center justify-items-center">
+    <section className="w-full py-16 px-4 text-center justify-items-center relative z-[10] bg-black">
       <div className="w-full flex justify-center">
         <div className="flex w-max bg-[#131315] border border-solid border-[#1d1d20] gap-[3px] px-[12px] py-[10px] rounded-full items-center">
           <img className="w-[20px] h-[20px]" src={currency} alt="star" />

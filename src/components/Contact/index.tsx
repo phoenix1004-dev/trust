@@ -6,7 +6,7 @@ import { HeaderText, NormalText } from "../common/Text";
 const Contact = () => {
   return (
     <section
-      className="w-full py-8 px-4 text-center"
+      className="w-full py-8 px-4 text-center relative z-[10]"
       style={{
         background:
           "radial-gradient(27.274516120515756% 35.90163801120711% at 50% -2.7755575615628914e-14%,#131315 0%,rgba(0,0,0,1) 100%)",

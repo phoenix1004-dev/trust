@@ -33,7 +33,7 @@ const HomeBenifits = () => {
 
   return (
     <section
-      className="w-full mt-8 px-4 bg-full-screen-shadow bg-no-repeat text-center pt-10 justify-items-center"
+      className="w-full mt-8 px-4 bg-full-screen-shadow bg-no-repeat text-center pt-10 justify-items-center relative bg-black z-[10]"
       style={{
         background:
           "radial-gradient(27.274516120515756% 35.90163801120711% at 50% -2.7755575615628914e-14%,#131315 0%,rgba(0,0,0,1) 100%)",

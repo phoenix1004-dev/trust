@@ -3,7 +3,7 @@ import { HeaderText, NormalText } from "../../components/common/Text";
 
 const HomeSafeSend = () => {
   return (
-    <section className="w-full mt-8 px-4 bg-full-screen-shadow bg-no-repeat text-center">
+    <section className="relative z-[10] w-full mt-8 px-4 bg-full-screen-shadow bg-black text-center">
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
           <div className="relative lg:w-1/2 text-left">

@@ -10,7 +10,7 @@ import { NormalButton } from "../../components/common/Button";
 
 const HomeDownload = () => {
   return (
-    <section className="w-full py-16 px-4">
+    <section className="w-full py-16 px-4 relative bg-black z-[10]">
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
           <div className="lg:w-1/2 bg-black z-10">
