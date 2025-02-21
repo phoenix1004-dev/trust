@@ -72,8 +72,14 @@ import widget from "./images/cards/widget.png";
 import portfolio from "./images/cards/portfolio.png";
 import twoArrowws from "./images/icons/twoArrows.png";
 import safeSendHeader from "./images/phones/safesend-header.svg";
+import walletPhone1 from "./images/phones/wallet-phone1.svg";
+import walletPhone2 from "./images/phones/wallet-phone2.svg";
+import walletPhone3 from "./images/phones/wallet-phone3.svg";
 
 export {
+  walletPhone1,
+  walletPhone2,
+  walletPhone3,
   safeSendHeader,
   twoArrowws,
   portfolio,
