@@ -7,11 +7,13 @@ type MenuItemProps = {
 
 const NavMenuItem: React.FC<MenuItemProps> = ({ item }) => {
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
-    e.preventDefault();
-    const targetId = item.link.replace("./#", "");
-    const element = document.getElementById(targetId);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth", block: "start" });
+    if (item.link.startsWith("./#")) {
+      e.preventDefault();
+      const targetId = item.link.replace("./#", "");
+      const element = document.getElementById(targetId);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
     }
   };
 
