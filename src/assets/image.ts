@@ -71,8 +71,10 @@ import transaction from "./images/cards/transaction.png";
 import widget from "./images/cards/widget.png";
 import portfolio from "./images/cards/portfolio.png";
 import twoArrowws from "./images/icons/twoArrows.png";
+import safeSendHeader from "./images/phones/safesend-header.svg";
 
 export {
+  safeSendHeader,
   twoArrowws,
   portfolio,
   widget,
