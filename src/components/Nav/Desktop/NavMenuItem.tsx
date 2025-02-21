@@ -10,9 +10,14 @@ const NavMenuItem: React.FC<MenuItemProps> = ({ item }) => {
     if (item.link.startsWith("./#")) {
       e.preventDefault();
       const targetId = item.link.replace("./#", "");
-      const element = document.getElementById(targetId);
-      if (element) {
-        element.scrollIntoView({ behavior: "smooth", block: "start" });
+      if (window.location.pathname !== "/") {
+        window.location.href = "/";
+        localStorage.setItem("scrollTo", targetId);
+      } else {
+        const element = document.getElementById(targetId);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
       }
     }
   };

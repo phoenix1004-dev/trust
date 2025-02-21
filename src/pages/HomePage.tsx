@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Layout from "../components/Layout";
 import HomeBenifits from "../containers/Home/Benefit";
 import HomeDownload from "../containers/Home/Download";
@@ -12,6 +13,19 @@ import HomeWallet from "../containers/Home/Wallet";
 import HomeWorks from "../containers/Home/Works";
 
 const HomePage = () => {
+  useEffect(() => {
+    const targetId = localStorage.getItem("scrollTo");
+    if (targetId) {
+      localStorage.removeItem("scrollTo");
+      setTimeout(() => {
+        const element = document.getElementById(targetId);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+      }, 100);
+    }
+  }, []);
+
   return (
     <Layout>
       <HomeHeader />
