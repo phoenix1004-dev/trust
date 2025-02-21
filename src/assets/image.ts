@@ -75,8 +75,16 @@ import safeSendHeader from "./images/phones/safesend-header.svg";
 import walletPhone1 from "./images/phones/wallet-phone1.svg";
 import walletPhone2 from "./images/phones/wallet-phone2.svg";
 import walletPhone3 from "./images/phones/wallet-phone3.svg";
+import error from "./images/icons/error.svg";
+import add from "./images/icons/add.svg";
+import redLine from "./images/other/red-line.svg";
+import greenLine from "./images/other/green-line.svg";
 
 export {
+  error,
+  add,
+  redLine,
+  greenLine,
   walletPhone1,
   walletPhone2,
   walletPhone3,
