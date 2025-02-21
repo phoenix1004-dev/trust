@@ -6,7 +6,10 @@ import { WALLET_DATA } from "../../types";
 
 const HomeWallet = () => {
   return (
-    <section className="w-full py-16 px-4 text-gray-800 relative bg-black z-[10]">
+    <section
+      id="wallets"
+      className="w-full py-16 px-4 text-gray-800 relative bg-black z-[10]"
+    >
       <section className="w-full px-4 text-gray-800">
         <div className="max-w-5xl mx-auto py-12 px-4 gap-8">
           <div className="md:col-span-2 max-w-4xl mx-auto">

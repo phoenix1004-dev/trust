@@ -21,7 +21,12 @@ const HomeFuture = () => {
       </div>
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 text-white justify-items-center">
         {FUTURE_ITEMS.map((item: FUTURE_DATA, index: number) => (
-          <Card title={item.title} sub={item.sub} image={item.img} />
+          <Card
+            key={index}
+            title={item.title}
+            sub={item.sub}
+            image={item.img}
+          />
         ))}
       </div>
     </section>

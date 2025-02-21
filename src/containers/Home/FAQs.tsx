@@ -7,6 +7,7 @@ import { FAQ_DATA } from "../../types";
 const HomeFAQs = () => {
   return (
     <section
+      id="faq"
       className="w-full px-4 py-24 relative overflow-hidden justify-items-center"
       style={{
         background:

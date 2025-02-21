@@ -33,6 +33,7 @@ const HomeBenifits = () => {
 
   return (
     <section
+      id="benefits"
       className="w-full mt-8 px-4 bg-full-screen-shadow bg-no-repeat text-center pt-10 justify-items-center relative bg-black z-[10]"
       style={{
         background:

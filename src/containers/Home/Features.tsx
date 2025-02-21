@@ -13,7 +13,10 @@ const HomeFeatures = () => {
   ];
 
   return (
-    <section className="w-full px-4 text-gray-800 mb-16 justify-items-center pt-10">
+    <section
+      id="features"
+      className="w-full px-4 text-gray-800 mb-16 justify-items-center pt-10"
+    >
       <InitialAppearance className="w-full justify-items-center" time={1}>
         <div className="flex w-full justify-center">
           <div className="flex w-max bg-[#131315] border border-solid border-[#1d1d20] gap-[3px] px-[12px] py-[10px] rounded-full items-center">
