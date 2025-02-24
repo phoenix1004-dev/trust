@@ -79,8 +79,18 @@ import error from "./images/icons/error.svg";
 import add from "./images/icons/add.svg";
 import redLine from "./images/other/red-line.svg";
 import greenLine from "./images/other/green-line.svg";
+import aboutMission from "./images/backgrounds/about-mission.svg";
+import normalLine from "./images/other/normal-line.svg";
+import key1 from "./images/icons/key1.svg";
+import key2 from "./images/icons/key2.svg";
+import key3 from "./images/icons/key3.svg";
 
 export {
+  key1,
+  key2,
+  key3,
+  normalLine,
+  aboutMission,
   error,
   add,
   redLine,

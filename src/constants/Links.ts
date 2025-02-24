@@ -2,12 +2,10 @@ import { linkedin, telegram, whatsApp, email } from "../assets/image";
 import { MENU_LINK, SOCIAL_DATA } from "../types";
 
 const MENU_LINKS: MENU_LINK[] = [
-  { title: "Features", link: "./#features" },
+  { title: "Home", link: "./" },
+  { title: "About", link: "./about" },
   { title: "SafeSend", link: "./safesend" },
-  { title: "Support", link: "./#support" },
-  { title: "Benefits", link: "./#benefits" },
-  { title: "Wallets", link: "./#wallets" },
-  { title: "FAQ's", link: "./#faq" },
+  { title: "Features", link: "./features" },
 ];
 
 const SOCIAL_ITEMS: SOCIAL_DATA[] = [
