@@ -84,8 +84,22 @@ import normalLine from "./images/other/normal-line.svg";
 import key1 from "./images/icons/key1.svg";
 import key2 from "./images/icons/key2.svg";
 import key3 from "./images/icons/key3.svg";
+import power1 from "./images/icons/power1.svg";
+import power2 from "./images/icons/power2.svg";
+import power3 from "./images/icons/power3.svg";
+import soon1 from "./images/icons/soon1.svg";
+import soon2 from "./images/icons/soon2.svg";
+import blueBlur from "./images/backgrounds/blue-blur.svg";
+import addtional1 from "./images/icons/addtional1.svg";
 
 export {
+  addtional1,
+  blueBlur,
+  soon1,
+  soon2,
+  power1,
+  power2,
+  power3,
   key1,
   key2,
   key3,
